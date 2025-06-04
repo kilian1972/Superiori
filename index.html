@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Pagina Personale</title>
+    <title>Gioco del Tris</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kilian Sartori</h1>
-        <p>Sviluppatore Web in formazione</p>
-    </header>
-    <main>
-        <section id="chi-sono">
-            <h2>Chi Sono?</h2>
-            <p>Sono uno studente di informatica al terzo anno, appassionato di tecnologia e programmazione. Mi piace imparare nuovi linguaggi e mettermi alla prova con progetti pratici, sia a scuola che nel tempo libero.</p>
-        </section>
-        <section id="competenze">
-            <h2>Le Mie Competenze</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS (in apprendimento)</li>
-                <li>JavaScript (in apprendimento)</li>
-            </ul>
-        </section>
-        <section id="contatti">
-            <h2>Contatti</h2>
-            <p>Email: kilian.sartori.studente@itispaleocapa.it</p>
-            <p>GitHub: <a href="https://github.com/kilian1972">github.com/tuousername</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 - Kilian Sartori</p>
-    </footer>
+    <div class="container">
+        <h1>Gioco del Tris</h1>
+        <div class="scores">
+            <span id="scoreX">X: 0</span> |
+            <span id="scoreO">O: 0</span>
+        </div>
+        <div class="status" id="status">Turno di X</div>
+        <div class="board" id="board">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        <button class="restart-btn" id="restartBtn">Ricomincia</button>
+        <button class="mode-btn" id="modeBtn">Modalità 4x4</button>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
